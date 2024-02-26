@@ -14,3 +14,15 @@
         name: apache2
         state: stopped 
     when: ansible_os_family=="Debian"
+
+  - name: i want to install httpd webserver on redhat nodes
+    dnf: 
+      name: httpd
+      state: present
+    when: ansible_os_family=="RedHat"
+
+  - name: I want to start httpd webserver on redhat nodes
+    service: 
+       name: httpd
+       state: started
+    when: ansible_os_family=="RedHat
