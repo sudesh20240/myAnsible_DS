@@ -4,3 +4,8 @@
   tasks: 
   - name: I want to execute linux commands
     command: hostname -f
+    register: myfirsttaskresult
+
+  - name: display myfirsttaskresult value
+    debug: 
+      msg: "myfirsttaskresult"
