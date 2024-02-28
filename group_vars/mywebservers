@@ -2,5 +2,5 @@
 Key: value
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
-myjavapackonubuntu: openjdk-11-jdk
-myjavapackonredhat: java-11-openjdk
+myjavapackonubuntu: openjdk-8-jdk
+myjavapackonredhat: java-1.8.0-amazon-corretto
