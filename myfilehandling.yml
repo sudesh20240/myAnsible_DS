@@ -16,3 +16,9 @@
     template: 
         src: myindex.j2
         dest: /var/www/html/index.html
+
+  - name: I want to download internet files
+    get_url:
+        url: https://chat.openai.com/c/1b2ed6ab-0cc8-4508-83c9-602cabd2deab
+        dest: /home/ubuntu/1b2ed6ab-0cc8-4508-83c9-602cabd2deab
+        force_basic_auth: yes
